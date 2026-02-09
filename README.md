@@ -30,6 +30,7 @@ npm install typed-env-safe
 PORT=4000
 NODE_ENV=production
 SECRET_KEY=my-secret-key
+ENABLE_LOGS=true
 ```
 
 ---
@@ -55,6 +56,10 @@ export const env = defineEnvSchema({
   SECRET_KEY: {
     type: 'string',
     required: true,
+  },
+  ENABLE_LOGS: {
+    type: 'boolean',
+    default: false,
   },
 });
 ```
@@ -105,6 +110,7 @@ const { env } = require('./env');
 console.log(env.PORT);       // → 4000
 console.log(env.NODE_ENV);   // → 'production'
 console.log(env.SECRET_KEY); // → 'my-secret-key'
+console.log(env.ENABLE_LOGS); // → true
 ```
 
 ---
@@ -117,6 +123,20 @@ console.log(env.SECRET_KEY); // → 'my-secret-key'
 | `default`  | `any`                                           | (Optional) Default value if not provided    |
 | `required` | `boolean`                                       | (Optional) Throws error if missing and no default |
 | `values`   | `string[]`                                      | Required for `enum` type                    |
+
+### Boolean Parsing
+
+Boolean environment variables accept multiple string formats (case-insensitive):
+- **Truthy values**: `true`, `1`, `yes`, `on`
+- **Falsy values**: `false`, `0`, `no`, `off`, empty string
+
+Examples:
+```env
+ENABLE_FEATURE=true
+DEBUG_MODE=1
+VERBOSE=yes
+DISABLE_CACHE=off
+```
 
 ---
 
