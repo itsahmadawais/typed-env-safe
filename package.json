@@ -13,11 +13,16 @@
   },
   "keywords": [
     "env",
+    "environment",
     "typescript",
-    "validation",
+    "type-safe",
     "dotenv",
-    "typed-env",
-    "typed env"
+    "validation",
+    "schema",
+    "zero-dependency",
+    "nodejs",
+    "config",
+    "environment-variables"
   ],
   "dependencies": {
     "dotenv": "^16.0.3"
