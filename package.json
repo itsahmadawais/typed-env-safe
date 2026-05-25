@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
-    "type": "github",
-    "url": "https://github.com/itsahmadawais/typed-env-safe"
+    "type": "git",
+    "url": "git+https://github.com/itsahmadawais/typed-env-safe.git"
   },
   "scripts": {
     "build": "tsc"
