@@ -2,6 +2,11 @@
 
 A zero-dependency, TypeScript-first utility to safely define, validate, and type environment variables using schema-like syntax.
 
+[![npm version](https://img.shields.io/npm/v/typed-env-safe)](https://www.npmjs.com/package/typed-env-safe)
+[![npm downloads](https://img.shields.io/npm/dw/typed-env-safe)](https://www.npmjs.com/package/typed-env-safe)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)](...)
+[![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)]()
+
 ---
 
 ## 🚀 Features
